@@ -1,50 +1,15 @@
 #include <stdio.h>
 
 int main(){
-    int pontos1, pontos2;
+    int pontos1 = 30, pontos2 = 50;
     int opcao;
-    unsigned long int populacao1, populacao2;
-    float area1, area2, pib1, pib2, densidade1, densidade2;
-    char nome1[50], nome2[50];
-  // Registrar dados da carta 1.
-    printf("Carta 1: \n");
+    unsigned long int populacao1 = 160000, populacao2 = 115000000;
+    float area1 = 469.2, area2 = 1521, pib1 = 13209880, pib2 = 828980607;
+
+    float densidade1 = (float) populacao1 / area1;
+    float densidade2 = (float) populacao2 / area2;
     
-    printf("Nome do país: \n");
-    scanf("%s", &nome1);
-
-    printf("Populacao: \n");
-    scanf("%d", &populacao1);
-
-    printf("Area: \n");
-    scanf("%f", &area1);
-
-    printf("PIB: \n");
-    scanf("%f", &pib1);
-
-    printf("Numero de pontos turisticos: \n");
-    scanf("%d", &pontos1);
-
-    densidade1 = (float) populacao1 / area1;
-
-    // Registrar dados da carta 2.
-    printf("Carta 2:\n");
-
-    printf("Nome do país: \n");
-    scanf("%s", &nome2);
-
-    printf("Populacao: \n");
-    scanf("%d", &populacao2);
-
-    printf("Area: \n");
-    scanf("%f", &area2);
-
-    printf("PIB: \n");
-    scanf("%f", &pib2);
-
-    printf("Numero de pontos turisticos: \n");
-    scanf("%d", &pontos2);
-
-    densidade2 = (float) populacao2 / area2;
+    char nome1[50] = "Araucária", nome2[50] = "São Paulo";
 
     // Escolher um valor para comparar.
   printf("Escolha um valor para comparar:\n");
